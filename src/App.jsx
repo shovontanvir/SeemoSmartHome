@@ -2,13 +2,17 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/Utilities.css';
 import Navbar from './Components/Navbar';
-import MainPage from './Components/MainPage';
+import NavInfo from './Components/NavInfo';
+import BlogPage from './Components/BlogPage';
+// import MainPage from './Components/MainPage';
 
 function App() {
   return (
     <div className="App">
+      <NavInfo />
       <Navbar />
-      <MainPage />
+      <BlogPage />
+      {/* <MainPage /> */}
     </div>
   );
 }
