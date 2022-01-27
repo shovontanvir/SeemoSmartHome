@@ -7,10 +7,11 @@ import facebook from '../images/facebook.png';
 import youtube from '../images/youtube.png';
 import twitter from '../images/twitter.png';
 import linkedin from '../images/linkedin.png';
-import banner from '../images/blogbanner.png';
+import indoor from '../images/indoor.png';
 import recents1 from '../images/recents-1.png';
 import recents2 from '../images/recents-2.png';
 import recents3 from '../images/recents-3.png';
+import Forms from './Forms';
 
 
 function BlogDescription(props) {
@@ -65,13 +66,24 @@ function Blog(props) {
 
 					<BlogDescription description='“Every year, app and game developers demonstrate exceptional craftsmanship and we’re honoring the best of the best,” said Ron Okamoto, Apple’s vice president of Worldwide Developer Relations. “Receiving an Apple Design Award is a special and laudable accomplishment. Past honorees have made some of the most noteworthy apps and games of all time. Through their vision, determination, and exacting standards, the winning developers inspire not only their peers in the Apple developer community, but all of us at Apple, too.”' />
 
-					<div className="mb-5">
-						<img src={banner} alt="banner" width="100%" />
+					<div className="row justify-content-between align-items-center mb-5 bg-light px-5 py-4 rounded-3">
+						<div className="col-4 ms-5">
+							<img src={indoor} alt="banner" width='125px' />
+						</div>
+						<div className="col-5 text-center me-5">
+							<h2 className='fw-bold fs-1'>Indoor Camera</h2>
+							<button type='button' className='btn btn-warning rounded-pill mt-2 px-4'>
+								<a href="#" className='text-decoration-none text-dark'>Shop Now</a>
+							</button>
+						</div>
 					</div>
 
 					<BlogDescription description='Apple today named eight app and game developers receiving an Apple Design Award, each one selected for being thoughtful and creative. Apple Design Award winners bring distinctive new ideas to life and demonstrate deep mastery of Apple technology. The apps spring up from developers large and small, in every part of the world, and provide users with new ways of working, creating, and playing.' />
 
 					<BlogDescription description='“Every year, app and game developers demonstrate exceptional craftsmanship and we’re honoring the best of the best,” said Ron Okamoto, Apple’s vice president of Worldwide Developer Relations. “Receiving an Apple Design Award is a special and laudable accomplishment. Past honorees have made some of the most noteworthy apps and games of all time. Through their vision, determination, and exacting standards, the winning developers inspire not only their peers in the Apple developer community, but all of us at Apple, too.”' />
+
+					<Forms />
+
 				</div>
 
 				<div className="col-3">
