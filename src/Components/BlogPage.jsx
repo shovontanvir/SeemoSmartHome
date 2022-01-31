@@ -11,12 +11,13 @@ import indoor from '../images/indoor.png';
 import recents1 from '../images/recents-1.png';
 import recents2 from '../images/recents-2.png';
 import recents3 from '../images/recents-3.png';
+import banner from '../images/banner.png';
 import Forms from './Forms';
 
 
 function BlogDescription(props) {
 	return(
-		<p className="mb-5 fs-5">{props.description}</p>
+		<p className="mb-5 fs-5 lh-lg">{props.description}</p>
 	);
 }
 
@@ -39,25 +40,29 @@ function Blog(props) {
 				<img src={props.src} alt='blog header' width='100%' />
 			</div>
 			<h1 style={{fontSize: '3.1875rem'}} className='fw-bold'>{props.heading}</h1>
-			<div className="row justify-content-between">
+			<div className="row justify-content-between align-items-center">
 				<div className="col">
-					<Media image={seemO} text="Author" date="January 21, 2022" readingtime="4" />
+					<Media flag="true" link="#" image={seemO} text="Author" date="January 21, 2022" readingtime="4" />
 				</div>
 				<div className="col text-end">
-					<Socials src={facebook} alt='facebook' />
-                    <Socials src={youtube} alt='youtube' />
-                    <Socials src={twitter} alt='twitter' />
-                    <Socials src={linkedin} alt='linkedin' />
+					<Socials link="#" class="d-inline-block ms-1 ms-sm-2 ms-md-3" src={facebook} alt='facebook' />
+                    <Socials link="#" class="d-inline-block ms-1 ms-sm-2 ms-md-3" src={youtube} alt='youtube' />
+                    <Socials link="#" class="d-inline-block ms-1 ms-sm-2 ms-md-3" src={twitter} alt='twitter' />
+                    <Socials link="#" class="d-inline-block ms-1 ms-sm-2 ms-md-3" src={linkedin} alt='linkedin' />
 				</div>
 			</div>
 
-			<hr className='my-4 border border-secondary' />
+			<hr className='mt-3 mb-4 border border-secondary' />
 
 			<div className="my-3">
 				<p style={{fontSize: ".75rem"}} className='my-0'>
-					<span className='me-2 text-secondary'>{props.category}</span>
+					<span className='me-2 text-secondary'>
+						<a href={props.categoryLink} className='text-decoration-none text-secondary'>{props.category}</a>
+					</span>
 						|	
-					<span className='ms-2'>{props.subcategory}</span>
+					<span className='ms-2'>
+						<a href={props.subcategoryLink} className='text-decoration-none text-dark'>{props.subcategory}</a>
+					</span>
 				</p>
 			</div>
 			<div className="row">
@@ -72,9 +77,11 @@ function Blog(props) {
 						</div>
 						<div className="col-5 text-center me-5">
 							<h2 className='fw-bold fs-1'>Indoor Camera</h2>
-							<button type='button' className='btn btn-warning rounded-pill mt-2 px-4'>
-								<a href="#" className='text-decoration-none text-dark'>Shop Now</a>
-							</button>
+							<a href="#" className='text-decoration-none text-dark'>
+								<button type='button' className='btn btn-warning rounded-pill mt-2 px-4'>
+									Shop Now
+								</button>
+							</a>
 						</div>
 					</div>
 
@@ -92,11 +99,11 @@ function Blog(props) {
 						
 						<hr className='my-2 border border-secondary' />
 
-						<Media image={recents1} text="The best video doorbells you can buy today" date="January 21, 2022" readingtime="4" />
+						<Media flag='true' link="#" image={recents1} text="The best video doorbells you can buy today" date="January 21, 2022" readingtime="4" />
 
-						<Media image={recents2} text="The best video doorbells you can buy today" date="January 21, 2022" readingtime="4" />
+						<Media flag='true' link="#" image={recents2} text="The best video doorbells you can buy today" date="January 21, 2022" readingtime="4" />
 
-						<Media image={recents3} text="The best video doorbells you can buy today" date="January 21, 2022" readingtime="4" />
+						<Media flag='true' link="#" image={recents3} text="The best video doorbells you can buy today" date="January 21, 2022" readingtime="4" />
 
 					</div>
 
@@ -104,6 +111,7 @@ function Blog(props) {
 						<h4 className="fw-bold">All Tag</h4>
 						
 						<hr className='my-2 border border-secondary' />
+
 						<div className="row jsutify-content-center px-2">
 							<Tags tag="Doorbells" />
 							<Tags tag="SEEMO" />
@@ -112,6 +120,23 @@ function Blog(props) {
 							<Tags tag="Intelligent" />
 						</div>
 					</div>
+
+					<div className="card text-white">
+						<img src={banner} className="card-img" alt="..." />
+						<div className="card-img-overlay d-flex align-items-end">
+							<div className='my-3 px-3 py-5'>
+								<span className="badge bg-warning text-dark my-3">60% OFF</span>
+								<h2 className="card-title fw-bold">Kitchen Appliances</h2>
+								<p className="card-text">For a perfect kitchen</p>
+								<a href="#" className='text-decoration-none text-dark'>
+									<button type='button' className='btn btn-warning rounded-pill mt-2 px-4'>
+										Shop Now
+									</button>
+								</a>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 
@@ -122,10 +147,10 @@ function Blog(props) {
 const BlogPage = () => {
 	return (
     	<section>
-        	<div className='container'>
+        	<div className='container mb-5'>
             	<div className='row'>
             		<div className='col-12 text-start'>
-                		<Blog src={blogheader} heading='The best video doorbells you can buy today' author='Admin' date='January 21, 2022' readingtime='4' category='Home' subcategory='Lifestyle'  />
+                		<Blog src={blogheader} heading='The best video doorbells you can buy today' author='Admin' date='January 21, 2022' readingtime='4' category='Home' categoryLink="#" subcategory='Lifestyle' subcategoryLink="#"  />
                 	</div>
               	</div>
           	</div>

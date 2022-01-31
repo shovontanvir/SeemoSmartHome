@@ -27,7 +27,7 @@ const NavInfo = () => {
         <section className='mx-0 px-xl-5 navinfo d-none d-sm-block'>
             <div className='container-fluid seemo px-4'>
                 <div className='row navinfo justify-content-lg-betwen align-items-center'>
-                    <div className='col'>
+                    <div className='col-4'>
                         <div className="row align-items-center">
                             <Info src={weather} alt="weather" info=' 38°C ' />
                             <Info classname='d-none d-lg-block' src={clock} alt='date' info='January 24, 2022' />
@@ -35,10 +35,10 @@ const NavInfo = () => {
                     </div>
                     <div className='col ms-md-auto text-end px-0'>
                         <span className='align-middle text-secondary'>Follow us:</span>
-                        <Socials src={facebook} alt='facebook' />
-                        <Socials src={youtube} alt='youtube' />
-                        <Socials src={twitter} alt='twitter' />
-                        <Socials src={linkedin} alt='linkedin' />
+                        <Socials link="#" class="d-inline-block ms-1 ms-sm-2 ms-md-3" src={facebook} alt='facebook' />
+                        <Socials link="#" class="d-inline-block ms-1 ms-sm-2 ms-md-3" src={youtube} alt='youtube' />
+                        <Socials link="#" class="d-inline-block ms-1 ms-sm-2 ms-md-3" src={twitter} alt='twitter' />
+                        <Socials link="#" class="d-inline-block ms-1 ms-sm-2 ms-md-3" src={linkedin} alt='linkedin' />
                     </div>
                 </div>
             </div>
