@@ -17,7 +17,7 @@ import Forms from './Forms';
 
 function BlogDescription(props) {
 	return(
-		<p className="mb-5 fs-5 lh-lg">{props.description}</p>
+		<p className="mb-5 fs-6 fs-lg-5 lh-lg">{props.description}</p>
 	);
 }
 
@@ -66,7 +66,7 @@ function Blog(props) {
 				</p>
 			</div>
 			<div className="row">
-				<div className="col-9  pe-5">
+				<div className="col-lg-9 pe-lg-5">
 					<BlogDescription description="Apple today named eight app and game developers receiving an Apple Design Award, each one selected for being thoughtful and creative. Apple Design Award winners bring distinctive new ideas to life and demonstrate deep mastery of Apple technology. The apps spring up from developers large and small, in every part of the world, and provide users with new ways of working, creating, and playing." />
 
 					<BlogDescription description='“Every year, app and game developers demonstrate exceptional craftsmanship and we’re honoring the best of the best,” said Ron Okamoto, Apple’s vice president of Worldwide Developer Relations. “Receiving an Apple Design Award is a special and laudable accomplishment. Past honorees have made some of the most noteworthy apps and games of all time. Through their vision, determination, and exacting standards, the winning developers inspire not only their peers in the Apple developer community, but all of us at Apple, too.”' />
@@ -93,48 +93,57 @@ function Blog(props) {
 
 				</div>
 
-				<div className="col-3">
-					<div style={{backgroundColor: "#f5f5f5"}} className="p-4 rounded-3">
-						<h4 className="fw-bold">Recent Post</h4>
-						
-						<hr className='my-2 border border-secondary' />
+				<div className="col-lg-3">
+					<div className="row justify-content-center align-items-center">
+						<div className="col col-lg-12">
+							<div className="row">
+								<div style={{backgroundColor: "#f5f5f5"}} className="col-12 p-4 rounded-3">
+									<h4 className="fw-bold">Recent Post</h4>
+									
+									<hr className='my-2 border border-secondary' />
 
-						<Media flag='true' link="#" image={recents1} text="The best video doorbells you can buy today" date="January 21, 2022" readingtime="4" />
+									<Media flag='true' link="#" image={recents1} text="The best video doorbells you can buy today" date="January 21, 2022" readingtime="4" />
 
-						<Media flag='true' link="#" image={recents2} text="The best video doorbells you can buy today" date="January 21, 2022" readingtime="4" />
+									<Media flag='true' link="#" image={recents2} text="The best video doorbells you can buy today" date="January 21, 2022" readingtime="4" />
 
-						<Media flag='true' link="#" image={recents3} text="The best video doorbells you can buy today" date="January 21, 2022" readingtime="4" />
+									<Media flag='true' link="#" image={recents3} text="The best video doorbells you can buy today" date="January 21, 2022" readingtime="4" />
 
-					</div>
+								</div>
 
-					<div style={{backgroundColor: "#f5f5f5"}} className="my-5 p-4 rounded-3">
-						<h4 className="fw-bold">All Tag</h4>
-						
-						<hr className='my-2 border border-secondary' />
+								<div style={{backgroundColor: "#f5f5f5"}} className="col-6 col-lg-12 my-3 my-lg-5 p-4 rounded-3 w-100">
+									<h4 className="fw-bold">All Tag</h4>
+									
+									<hr className='my-2 border border-secondary' />
 
-						<div className="row jsutify-content-center px-2">
-							<Tags tag="Doorbells" />
-							<Tags tag="SEEMO" />
-							<Tags tag="Best Video" />
-							<Tags tag="Security" />
-							<Tags tag="Intelligent" />
-						</div>
-					</div>
-
-					<div className="card text-white">
-						<img src={banner} className="card-img" alt="..." />
-						<div className="card-img-overlay d-flex align-items-end">
-							<div className='my-3 px-3 py-5'>
-								<span className="badge bg-warning text-dark my-3">60% OFF</span>
-								<h2 className="card-title fw-bold">Kitchen Appliances</h2>
-								<p className="card-text">For a perfect kitchen</p>
-								<a href="#" className='text-decoration-none text-dark'>
-									<button type='button' className='btn btn-warning rounded-pill mt-2 px-4'>
-										Shop Now
-									</button>
-								</a>
+									<div className="row jsutify-content-center px-2">
+										<Tags tag="Doorbells" />
+										<Tags tag="SEEMO" />
+										<Tags tag="Best Video" />
+										<Tags tag="Security" />
+										<Tags tag="Intelligent" />
+									</div>
+								</div>
 							</div>
 						</div>
+
+						<div className="col col-lg-12 d-none d-md-block">
+							<div className="card text-white">
+								<img src={banner} className="card-img" alt="..." />
+								<div className="card-img-overlay d-flex align-items-end">
+									<div className='my-3 px-3 py-5'>
+										<span className="badge bg-warning text-dark my-3">60% OFF</span>
+										<h2 className="card-title fw-bold">Kitchen Appliances</h2>
+										<p className="card-text">For a perfect kitchen</p>
+										<a href="#" className='text-decoration-none text-dark'>
+											<button type='button' className='btn btn-warning rounded-pill mt-2 px-4'>
+												Shop Now
+											</button>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						
 					</div>
 
 				</div>
@@ -147,7 +156,7 @@ function Blog(props) {
 const BlogPage = () => {
 	return (
     	<section>
-        	<div className='container mb-5'>
+        	<div className='container-fluid container-xl px-5 px-xl-0 mb-5'>
             	<div className='row'>
             		<div className='col-12 text-start'>
                 		<Blog src={blogheader} heading='The best video doorbells you can buy today' author='Admin' date='January 21, 2022' readingtime='4' category='Home' categoryLink="#" subcategory='Lifestyle' subcategoryLink="#"  />

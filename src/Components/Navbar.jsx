@@ -25,7 +25,7 @@ function Navbar() {
 					</button>
 
 					{/* Navigation menu items */}
-					<div className="collapse navbar-collapse justify-content-between " id="navbarSupportedContent">
+					<div className="collapse bg-white mt-5 mt-lg-0 navbar-collapse justify-content-between " id="navbarSupportedContent">
 						<ul className="navbar-nav me-auto mb-2 mb-lg-0">
 							<li className="nav-item">
 								<a className="nav-link" href="#">Home</a>
@@ -38,9 +38,8 @@ function Navbar() {
 									Product
 								</a>
 								<ul className="dropdown-menu bg-white" aria-labelledby="navbarDropdown">
-									<li><a className="dropdown-item" href="#">Action</a></li>
-									<li><a className="dropdown-item" href="#">Another action</a></li>
-									<li><a className="dropdown-item" href="#">Something else here</a></li>
+									<li><a className="dropdown-item" href="#">Doorbell</a></li>
+									<li><a className="dropdown-item" href="#">Indoor Camera</a></li>
 								</ul>
 							</li>
 							<li className="nav-item">
@@ -55,11 +54,11 @@ function Navbar() {
 						</ul>
 						<div className="d-none d-lg-flex align-items-center">
 							<a className="navbar-brand" href="#">
-								<div className="row align-items-center">
-									<div className="col px-0">
+								<div className="align-items-center d-flex">
+									<div className="ps-0 pe-2 pe-xl-3">
 										<img src={telephone} alt='cart' />
 									</div>
-									<div className="col d-none d-xl-block text-start">
+									<div className="d-none d-xl-block text-start">
 										<h6 style={{fontSize: "14px"}} className='my-0 text-secondary'>Make a call</h6>
 										<h6 style={{fontSize: "18px"}} className='fs-6 my-0'>09 63877 3366</h6>
 									</div>

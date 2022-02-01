@@ -19,23 +19,23 @@ const Footer = () => {
               <div className="row justify-content-center align-items-center">
                   <div className="col-12 border-bottom py-4">
                       <div className="row justify-content-between align-items-center">
-                          <div className="col-6 col-md-3">
+                          <div className="col-6 col-lg-3">
                               <Media image={feature1} text="Fast and free delivery" text2="Free delivery for all orders over BDT 3000" />
                           </div>
-                          <div className="col-6 col-md-3">
+                          <div className="col-6 col-lg-3">
                               <Media image={feature2} text="Money back guarantee" text2="We return money within 30 days" />
                           </div>
-                          <div className="col-6 col-md-3">
+                          <div className="col-6 col-lg-3">
                               <Media image={feature3} text="24/7 customer support" text2="Friday 24/7 customer support" />
                           </div>
-                          <div className="col-6 col-md-3">
+                          <div className="col-6 col-lg-3">
                               <Media image={feature4} text="Secure online payment" text2="We possess SSL / Secure сertificate " />
                           </div>
                       </div>
                   </div>
-                  <div className="col-12 py-5">
+                  <div className="col-12 py-4 py-lg-5">
 					<div className="row align-items-center justify-content-between">
-						<div className="col d-flex ps-0">
+						<div className="col d-none d-lg-flex ps-0">
 							<div className="pe-4 border-end border-dark">
 								<a href="#" className='text-decoration-none text-secondary fs-6'>Home</a>
 							</div>
@@ -55,7 +55,7 @@ const Footer = () => {
 								<a href="#" className='text-decoration-none text-secondary fs-6'>Contact</a>
 							</div>
 						</div>
-						<div className="col text-end pe-0">
+						<div className="col d-none d-lg-flex text-end pe-0">
 							<Socials link="#" class="d-inline-block rounded-3 mx-2 py-1 px-2 bg-white" src={facebookY} alt='facebook' />
 							<Socials link="#" class="d-inline-block rounded-3 mx-2 py-1 px-2 bg-white" src={youtubeY} alt='youtube' />
 							<Socials link="#" class="d-inline-block rounded-3 mx-2 py-1 px-2 bg-white" src={twitterY} alt='twitter' />
@@ -64,13 +64,13 @@ const Footer = () => {
 					</div>
                   </div>
                   <div className="col-12 text-start ps-0">
-					<div className="row align-items-center justify-content-between">
-						<div className="col ps-0">
+					<div className="row align-items-center justify-content-center justify-content-lg-between">
+						<div className="col-12 col-xl text-center text-xl-start ps-0">
 							<p style={{fontSize: ".75rem"}} className='mb-0'>&copy; All rights reserved. Made by <a href="https://www.btracsolutions.com/" className='text-decoration-none' target="_blank">B-Trac Solutions Limited</a> </p>
 						</div>
-						<div className="col pe-0">
+						<div className="col-12 col-xl text-center text-xl-end pe-0">
 							<a href="#">
-								<img src={ssl} alt="ssl" />
+								<img src={ssl} alt="ssl" width="100%"/>
 							</a>
 						</div>
 					</div>

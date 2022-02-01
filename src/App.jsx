@@ -14,7 +14,6 @@ function App() {
       <NavInfo />
       <Navbar />
       <BlogPage />
-      {/* <MainPage /> */}
       <Download />
       <Footer />
     </div>

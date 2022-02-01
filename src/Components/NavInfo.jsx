@@ -10,12 +10,10 @@ import Socials from './Socials';
 
 function Info(props) {
     return (
-        <div className='col text-start px-0'>
             <div className={props.classname}>
-                <img src={props.src} alt={props.alt} className='me-1 me-md-2 me-lg-3' />
+                <img src={props.src} alt={props.alt} className='me-1 me-xl-2' />
                 <span className='align-middle text-secondary'>{props.info}</span>
             </div>
-        </div>
     );
   }
 
@@ -26,12 +24,10 @@ const NavInfo = () => {
       
         <section className='mx-0 px-xl-5 navinfo d-none d-sm-block'>
             <div className='container-fluid seemo px-4'>
-                <div className='row navinfo justify-content-lg-betwen align-items-center'>
-                    <div className='col-4'>
-                        <div className="row align-items-center">
-                            <Info src={weather} alt="weather" info=' 38°C ' />
-                            <Info classname='d-none d-lg-block' src={clock} alt='date' info='January 24, 2022' />
-                        </div>
+                <div className='row navinfo justify-content-between align-items-center'>
+                    <div className='col-4 col-xl-5 col-xxl-4 text-start px-0 d-flex'>
+                        <Info src={weather} alt="weather" info=' 38°C ' />
+                        <Info classname='d-none d-lg-block ms-auto' src={clock} alt='date' info='January 24, 2022' />
                     </div>
                     <div className='col ms-md-auto text-end px-0'>
                         <span className='align-middle text-secondary'>Follow us:</span>
