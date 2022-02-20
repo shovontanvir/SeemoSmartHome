@@ -1,0 +1,9 @@
+.socials {
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.socials:hover {
+  width: 175%;
+}
+/*# sourceMappingURL=Socials.css.map */

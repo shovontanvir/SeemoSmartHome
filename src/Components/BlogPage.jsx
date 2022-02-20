@@ -13,6 +13,7 @@ import recents2 from '../images/recents-2.png';
 import recents3 from '../images/recents-3.png';
 import banner from '../images/banner.png';
 import Forms from './Forms';
+import Buttons from './Buttons';
 
 
 function BlogDescription(props) {
@@ -36,10 +37,10 @@ function Tags(props) {
 function Blog(props) {
     return (
 		<div>
-			<div className='my-4'>
+			<div style={{borderRadius: "15px"}} className='my-4'>
 				<img src={props.src} alt='blog header' width='100%' />
 			</div>
-			<h1 style={{fontSize: '3.1875rem'}} className='fw-bold'>{props.heading}</h1>
+			<h1 style={{fontSize: 'calc(1.75rem + 1.5vw)'}} className='fw-bold'>{props.heading}</h1>
 			<div className="row justify-content-between align-items-center">
 				<div className="col">
 					<Media flag="true" link="#" image={seemO} text="Author" date="January 21, 2022" readingtime="4" />
@@ -72,16 +73,12 @@ function Blog(props) {
 					<BlogDescription description='“Every year, app and game developers demonstrate exceptional craftsmanship and we’re honoring the best of the best,” said Ron Okamoto, Apple’s vice president of Worldwide Developer Relations. “Receiving an Apple Design Award is a special and laudable accomplishment. Past honorees have made some of the most noteworthy apps and games of all time. Through their vision, determination, and exacting standards, the winning developers inspire not only their peers in the Apple developer community, but all of us at Apple, too.”' />
 
 					<div className="row justify-content-between align-items-center mb-5 bg-light px-5 py-4 rounded-3">
-						<div className="col-4 ms-5">
+						<div className="col-4 ms-2 ms-md-4 ms-lg-5">
 							<img src={indoor} alt="banner" width='125px' />
 						</div>
-						<div className="col-5 text-center me-5">
+						<div className="col-5 text-center me-2 me-md-4 me-lg-5">
 							<h2 className='fw-bold fs-1'>Indoor Camera</h2>
-							<a href="#" className='text-decoration-none text-dark'>
-								<button type='button' className='btn btn-warning rounded-pill mt-2 px-4'>
-									Shop Now
-								</button>
-							</a>
+							<Buttons normal="true" link="#" class="rounded-pill btn-seemoY px-4" text="Shop Now" />
 						</div>
 					</div>
 
@@ -131,14 +128,10 @@ function Blog(props) {
 								<img src={banner} className="card-img" alt="..." />
 								<div className="card-img-overlay d-flex align-items-end">
 									<div className='my-3 px-3 py-5'>
-										<span className="badge bg-warning text-dark my-3">60% OFF</span>
+										<span className="badge bg-{$semoY} text-dark my-3">60% OFF</span>
 										<h2 className="card-title fw-bold">Kitchen Appliances</h2>
 										<p className="card-text">For a perfect kitchen</p>
-										<a href="#" className='text-decoration-none text-dark'>
-											<button type='button' className='btn btn-warning rounded-pill mt-2 px-4'>
-												Shop Now
-											</button>
-										</a>
+										<Buttons normal="true" link="#" class="rounded-pill btn-seemoY px-4" text="Shop Now" />
 									</div>
 								</div>
 							</div>

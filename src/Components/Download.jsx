@@ -19,9 +19,9 @@ const Download = () => {
                             <img src={seemoLogo} alt='brand logo' width='120px' />
                             <p className='my-3'>Seemo Intelligent Living is an initiative of B-Trac Solutions Ltd. which is a sister concern of Bangla Trac Ltd. Launched in 2017, it is the first in Bangladesh in home security and automation industry. </p>
                         </div>
-                        <h6>Download our app</h6>
-                        <Buttons link="#" image={appStore} text="Available on the" text2="App Store" />
-                        <Buttons link="#" image={playStore} text="Get it on" text2="Google Play" />
+                        <h6 className='fw-bold'>Download our app</h6>
+                        <Buttons link="#" class="btn-dark" image={appStore} text="Available on the" text2="App Store" />
+                        <Buttons link="#" class="btn-dark ms-3" image={playStore} text="Get it on" text2="Google Play" />
                     </div>
               </div>
           </div>

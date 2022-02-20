@@ -1,0 +1,21 @@
+.btn-seemo {
+  outline-color: rgba(0, 0, 0, 0.5);
+  outline-offset: 0px;
+  -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-seemo:hover {
+  outline: 1px solid;
+  outline-color: rgba(0, 0, 0, 0);
+  outline-offset: 15px;
+}
+
+.btn-seemoY {
+  background-color: #FBA40D;
+}
+
+.btn-seemoB {
+  background-color: #00448F;
+}
+/*# sourceMappingURL=Buttons.css.map */

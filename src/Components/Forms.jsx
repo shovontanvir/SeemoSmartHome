@@ -1,5 +1,7 @@
 import React from 'react';
 import '../Styles/Forms.css';
+import '../Styles/Variables.css';
+import Buttons from './Buttons';
 
 const Forms = () => {
   return (
@@ -35,7 +37,7 @@ const Forms = () => {
                 </div>
             </div>
             <div className="col-12 my-3">
-                <button type="submit" className="btn btn-warning rounded-pill px-4">Post Comment</button>
+                <Buttons normal="true" link="#" class="btn-seemoY rounded-pill px-4" text="Post Comment" /> 
             </div>
         </form>
     </div>

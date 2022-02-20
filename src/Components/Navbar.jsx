@@ -9,13 +9,13 @@ import '../Styles/Navbar.css';
 function Navbar() {
 	return (
 		<>
-			<nav className="navbar navbar-expand-lg navbar-light mx-0 px-xl-5 border-bottom border-color-gray-100">
+			<nav className="navbar navbar-expand-lg navbar-light mx-0 py-0 px-xl-5 border-bottom border-color-gray-100">
 				<div className="container-fluid seemo px-4">
 
 					{/* Navbar Logo */}
 					<div className="me-3 me-xl-4">
 						<a className="navbar-brand" href="#">
-							<img src={seemoLogo} alt='brand logo' width='140px' />
+							<img src={seemoLogo} alt='brand logo' className='navbar-logo' />
 						</a>
 					</div>
 
@@ -38,8 +38,8 @@ function Navbar() {
 									Product
 								</a>
 								<ul className="dropdown-menu bg-white" aria-labelledby="navbarDropdown">
-									<li><a className="dropdown-item" href="#">Doorbell</a></li>
-									<li><a className="dropdown-item" href="#">Indoor Camera</a></li>
+									<li><a className="dropdown-item mx-0" href="#">Doorbell</a></li>
+									<li><a className="dropdown-item mx-0" href="#">Indoor Camera</a></li>
 								</ul>
 							</li>
 							<li className="nav-item">
@@ -60,13 +60,13 @@ function Navbar() {
 									</div>
 									<div className="d-none d-xl-block text-start">
 										<h6 style={{fontSize: "14px"}} className='my-0 text-secondary'>Make a call</h6>
-										<h6 style={{fontSize: "18px"}} className='fs-6 my-0'>09 63877 3366</h6>
+										<p style={{fontSize: "18px"}} className=' my-0'>09 63877 3366</p>
 									</div>
 								</div>
 							</a>
 							<div className="ms-2">
-								<a className="navbar-brand" href="#">
-									<img src={cart} alt='cart' />
+								<a className="navbar-brand me-0" href="#">
+									<img src={cart} alt='cart'  />
 									<sup className='ms-1'>[0]</sup>
 								</a>
 							</div>
